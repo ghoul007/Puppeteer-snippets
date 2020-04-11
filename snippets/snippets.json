@@ -77,4 +77,44 @@
         ],
         "description": "This method runs Array.from(document.querySelectorAll(selector)) within the page and passes it as the first argument"
     },
+    "pageClick": {
+        "prefix": "g-page-click",
+        "body": "await page.click('$0');",
+        "description": "Clicks in the element"
+    },
+    "pageClose": {
+        "prefix": "g-page-close",
+        "body": "await page.close();",
+        "description": "Closes the page"
+    },
+    "pageEmulate": {
+        "prefix": "g-page-emulate",
+        "body": "await page.emulate($0);",
+        "description": "Emulates a given device metrics and user agent"
+    },
+    "pageFocus": {
+        "prefix": "g-page-focus",
+        "body": "await page.focus('$0');",
+        "description": "Focuses an element within the page"
+    },
+    "pageGoBack": {
+        "prefix": "g-page-goBack",
+        "body": "await page.goBack();",
+        "description": "Navigates to the previous page in the history"
+    },
+    "pageGoForward": {
+        "prefix": "g-page-goForward",
+        "body": "await page.goForward();",
+        "description": "Navigates to the next page in the history"
+    },
+    "pageGoto": {
+        "prefix": "g-page-goto",
+        "body": "await page.goto('$0');",
+        "description": "Navigates the page to a URL"
+    },
+    "pageHover": {
+        "prefix": "g-page-hover",
+        "body": "await page.hover('$0');",
+        "description": "Hovers over the element"
+    },
 }
