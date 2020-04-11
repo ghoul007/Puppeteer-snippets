@@ -59,7 +59,7 @@
         "body": "await page.$$('$0');",
         "description": "The method runs document.querySelectorAll within the page."
     },
-    "page.$eval": {
+    "Page.$eval": {
         "prefix": "g-page-$eval",
         "body": [
             "await page.$eval('$1', ele => {",
@@ -68,7 +68,7 @@
         ],
         "description": "This method runs Array.from(document.querySelector(selector)) within the page and passes it as the first argument"
     },
-    "page.$$eval": {
+    "Page.$$eval": {
         "prefix": "g-page-$$eval",
         "body": [
             "await page.$$eval('$1', eles => {",
@@ -77,44 +77,69 @@
         ],
         "description": "This method runs Array.from(document.querySelectorAll(selector)) within the page and passes it as the first argument"
     },
-    "pageClick": {
+    "PageClick": {
         "prefix": "g-page-click",
         "body": "await page.click('$0');",
         "description": "Clicks in the element"
     },
-    "pageClose": {
+    "PageClose": {
         "prefix": "g-page-close",
         "body": "await page.close();",
         "description": "Closes the page"
     },
-    "pageEmulate": {
+    "PageEmulate": {
         "prefix": "g-page-emulate",
         "body": "await page.emulate($0);",
         "description": "Emulates a given device metrics and user agent"
     },
-    "pageFocus": {
+    "PageFocus": {
         "prefix": "g-page-focus",
         "body": "await page.focus('$0');",
         "description": "Focuses an element within the page"
     },
-    "pageGoBack": {
+    "PageGoBack": {
         "prefix": "g-page-goBack",
         "body": "await page.goBack();",
         "description": "Navigates to the previous page in the history"
     },
-    "pageGoForward": {
+    "PageGoForward": {
         "prefix": "g-page-goForward",
         "body": "await page.goForward();",
         "description": "Navigates to the next page in the history"
     },
-    "pageGoto": {
+    "PageGoto": {
         "prefix": "g-page-goto",
         "body": "await page.goto('$0');",
         "description": "Navigates the page to a URL"
     },
-    "pageHover": {
+    "PageHover": {
         "prefix": "g-page-hover",
         "body": "await page.hover('$0');",
         "description": "Hovers over the element"
     },
+    "PageKeyboardDown": {
+        "prefix": "g-page-keyboard-down",
+        "body": "await page.keyboard.down('$0');",
+        "description": "Dispatches a `keydown` event"
+    },
+    "PageKeyboardUp": {
+        "prefix": "g-page-keyboard-up",
+        "body": "await page.keyboard.up('$0');",
+        "description": "Dispatches a `keyup` event"
+    },
+    "PageKeyboardPress": {
+        "prefix": "g-page-keyboard-press",
+        "body": "await page.keyboard.press('$0');",
+        "description": "Presses on a specific key"
+    },
+    "PageKeyboardSendCharacter": {
+        "prefix": "g-page-keyboard-sendCharacter",
+        "body": "await page.keyboard.sendCharacter('$0');",
+        "description": "Dispatches a `keypress` and `input` event"
+    },
+    "PageKeyboardType": {
+        "prefix": "g-page-keyboard-type",
+        "body": "await page.keyboard.type('$0');",
+        "description": "Types a text into a focused element"
+    }
 }
