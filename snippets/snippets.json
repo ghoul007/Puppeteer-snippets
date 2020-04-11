@@ -28,5 +28,15 @@
         "prefix": "p-browser-close",
         "body": "await browser.close();",
         "description": "Closes browser"
-      }
+    },
+    "IIFE": {
+        "prefix": "g-iife",
+        "body": "(async()=>{\n$0\n})()",
+        "description": "IIFE Syntax"
+    },
+    "IncognitoBrowser": {
+        "prefix": "g-browser-Incognit",
+        "body": "const ${1:context} = await ${2:browser}.createIncognitoBrowserContext();",
+        "description": "Creates a incognito browser"
+    }
 }
