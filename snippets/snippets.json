@@ -1,0 +1,13 @@
+{
+    "ImportPuppeteer":{
+        "prefix": "g-ip",
+        "body": "const ${0:puppeteer} = require('puppeteer');",
+        "description": "Imports Puppeteer"
+    },
+    "ImportModule":{
+        "prefix": "g-im",
+        "body": "const ${2:moduleName} = require('${1:module}')",
+        "description": "Imports Module"
+    }
+
+}

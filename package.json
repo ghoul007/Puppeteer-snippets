@@ -1,0 +1,20 @@
+{
+    "name": "ghoul007-puppeteer-snippet",
+    "displayName": "ghoul007-puppeteer-snippet",
+    "description": "code snippets for puppeteer",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
