@@ -141,5 +141,15 @@
         "prefix": "g-page-keyboard-type",
         "body": "await page.keyboard.type('$0');",
         "description": "Types a text into a focused element"
-    }
+    },
+    "PagePdf": {
+        "prefix": "g-pdf",
+        "body": "await page.pdf({ path: '${1:test.pdf}', format: '${2|A0,A1,A2,A3,A5,A6|}' });",
+        "description": "Generates a PDF from the page"
+    },
+    "PageScreenshot": {
+        "prefix": "g-screenshot",
+        "body": "await page.screenshot({ path: '${1:test.png}'});",
+        "description": "Generates a screenshot of the page"
+    },
 }
