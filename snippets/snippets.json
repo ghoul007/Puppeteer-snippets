@@ -152,4 +152,40 @@
         "body": "await page.screenshot({ path: '${1:test.png}'});",
         "description": "Generates a screenshot of the page"
     },
+    "PageWaitFor": {
+        "prefix": "g-waitFor",
+        "body": "await page.waitFor($0);",
+        "description": "Waits until an element/predicate/timeout is resolved"
+    },
+    "PageWaitForFunction": {
+        "prefix": "g-waitForFunction",
+        "body": "await page.waitForFunction($0);",
+        "description": "Waits until a predicate returns a truthy value"
+    },
+    "PageWaitForNavigation": {
+        "prefix": "g-waitForNavigation",
+        "body": "await page.waitForNavigation();",
+        "description": "Waits until the page navigates to a new URL or reloads"
+    },
+    "PageWaitForRequest": {
+        "prefix": "g-waitForRequest",
+        "body": "await page.waitForRequest($0);",
+        "description": "Waits until a request by URL/predicate is resolved"
+    },
+    "Page.waitForResponse": {
+        "prefix": "g-waitForResponse",
+        "body": "await page.waitForResponse($0);",
+        "description": "Waits until a response by URL/predicate is resolved"
+    },
+    "PageWaitForSelector": {
+        "prefix": "g-waitForSelector",
+        "body": "await page.waitForSelector('$0');",
+        "description": "Waits until an element (by selector) is appeared in the page"
+    },
+    "PageWaitForXPath": {
+        "prefix": "g-waitForXPath",
+        "body": "await page.waitForXPath('$0');",
+        "description": "Waits until an element (by XPath) is appeared in the page"
+    }
+
 }
