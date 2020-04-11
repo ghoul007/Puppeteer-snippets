@@ -1,13 +1,32 @@
 {
-    "ImportPuppeteer":{
+    "ImportPuppeteer": {
         "prefix": "g-ip",
         "body": "const ${0:puppeteer} = require('puppeteer');",
         "description": "Imports Puppeteer"
     },
-    "ImportModule":{
+    "ImportModule": {
         "prefix": "g-im",
         "body": "const ${2:moduleName} = require('${1:module}')",
         "description": "Imports Module"
-    }
-
+    },
+    "ImportPuppeteerFirefox": {
+        "prefix": "g-ipf",
+        "body": "const ${0:puppeteer} = require('puppeteer-firefox');",
+        "description": "Imports Firefox-Puppeteer "
+    },
+    "puppeteerLaunch": {
+        "prefix": "g-launch",
+        "body": "const ${1:browser} = await puppeteer.launch($0);",
+        "description": "Creates a Chromium instance"
+    },
+    "puppeteerLaunchHeadless": {
+        "prefix": "g-launch-headless",
+        "body": "const ${1:browser} = await puppeteer.launch({headless:false});",
+        "description": "Creates a Chromium instance with headless egal false"
+    },
+    "browserClose": {
+        "prefix": "p-browser-close",
+        "body": "await browser.close();",
+        "description": "Closes browser"
+      }
 }
