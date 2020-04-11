@@ -25,7 +25,7 @@
         "description": "Creates a Chromium instance with headless egal false"
     },
     "browserClose": {
-        "prefix": "p-browser-close",
+        "prefix": "g-browser-close",
         "body": "await browser.close();",
         "description": "Closes browser"
     },
@@ -38,5 +38,43 @@
         "prefix": "g-browser-Incognit",
         "body": "const ${1:context} = await ${2:browser}.createIncognitoBrowserContext();",
         "description": "Creates a incognito browser"
-    }
+    },
+    "NewPage": {
+        "prefix": "g-newPage",
+        "body": "const ${1:page} = await ${2:browser}.newPage();",
+        "description": "Create a new page"
+    },
+    "WaitForTarget": {
+        "prefix": "g-waitForTarget",
+        "body": "await browser.waitForTarget($0);",
+        "description": "Waits until a predicat, this searches for a target in all browser contexts"
+    },
+    "Page$": {
+        "prefix": "g-page$",
+        "body": "await page.$('$0');",
+        "description": "The method runs document.querySelector within the page."
+    },
+    "Page$$": {
+        "prefix": "g-page$$",
+        "body": "await page.$$('$0');",
+        "description": "The method runs document.querySelectorAll within the page."
+    },
+    "page.$eval": {
+        "prefix": "g-page-$eval",
+        "body": [
+            "await page.$eval('$1', ele => {",
+            "\t$0",
+            "});"
+        ],
+        "description": "This method runs Array.from(document.querySelector(selector)) within the page and passes it as the first argument"
+    },
+    "page.$$eval": {
+        "prefix": "g-page-$$eval",
+        "body": [
+            "await page.$$eval('$1', eles => {",
+            "\t$0",
+            "});"
+        ],
+        "description": "This method runs Array.from(document.querySelectorAll(selector)) within the page and passes it as the first argument"
+    },
 }
