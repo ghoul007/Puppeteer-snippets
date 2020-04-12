@@ -44,3 +44,8 @@ ghoul007-puppeteer-snippet provides basic snippet support for Puppeteer for vsco
 |  `g-waitForResponse→`   |           await page.waitForResponse(...);          
 |  `g-waitForSelector→`   |           await page.waitForSelector('...');          
 |  `g-waitForXPath→`   |  await page.waitForXPath('...');
+|  `g-event-document-loaded→`   |  page.once('domcontentloaded'...);
+|  `g-event-load→`   |  page.once('load'...);
+|  `g-event-console→`   |  page.on('console'...);
+|  `g-event-metrics→`   |  page.on('metrics'...);
+|  `g-event-error→`   |  page.on('error'...);

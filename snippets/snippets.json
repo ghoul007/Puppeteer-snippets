@@ -186,6 +186,30 @@
         "prefix": "g-waitForXPath",
         "body": "await page.waitForXPath('$0');",
         "description": "Waits until an element (by XPath) is appeared in the page"
+    },
+    "EventDocumentLoaded": {
+        "prefix": "g-event-document-loaded",
+        "body": "page.once('domcontentloaded', () => console.info('✅ DOM is ready'));",
+        "description": "Emitted when the DOM is parsed and ready (without waiting for resources)"
+    },
+    "EventLoad": {
+        "prefix": "g-event-load",
+        "body": "page.once('load', () => console.info('✅ Page is loaded'));",
+        "description": "Emitted when the page is loaded"
+    },
+    "EventConsole": {
+        "prefix": "g-event-console",
+        "body": "page.on('console', message => console[message.type()](`👉 ${message.text()}`))",
+        "description": "Emitted when a script within the page uses `console`"
+    },
+    "EventMetrics": {
+        "prefix": "g-event-metrics",
+        "body": "page.on('metrics', data => console.info(`👉 Timestamp added at ${data.metrics.Timestamp}`))",
+        "description": "EEmitted when a script within the page uses `console.timeStamp`"
+    },
+    "EventError": {
+        "prefix": "g-event-error",
+        "body": "page.on('error', error => console.error(`❌ ${error}`))",
+        "description": "Emitted when the page emits an error event"
     }
-
 }
