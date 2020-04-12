@@ -27,5 +27,8 @@
                 "path": "./snippets/snippets.json"
             }
         ]
+    },
+    "scripts":{
+        "publish": "vsce publish"
     }
 }
