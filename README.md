@@ -1,9 +1,9 @@
-# ghoul007-puppeteer-snippet README
+# Puppeteer Snippets
 
 ghoul007-puppeteer-snippet provides basic snippet support for Puppeteer for vscode.
 
 
-## Snippets
+## Snippets List
 
 | Snippet            | Content                                |
 | ------------------ | -------------------------------------- |
