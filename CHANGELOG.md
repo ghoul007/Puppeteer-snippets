@@ -10,3 +10,7 @@
 
 - Add LICENSE
 - Update README.md
+
+## v1.1.0
+
+- Adding event snippets
