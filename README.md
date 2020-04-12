@@ -1,6 +1,7 @@
-# Puppeteer Snippets
+# Puppeteer Snippets Extension 
 
 ghoul007-puppeteer-snippet provides basic snippet support for Puppeteer for vscode.
+[see more](https://marketplace.visualstudio.com/items?itemName=ghoul007.ghoul007-puppeteer-snippet&ssr=false#overview)
 
 
 ## Snippets List
