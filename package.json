@@ -2,14 +2,14 @@
     "name": "ghoul007-puppeteer-snippet",
     "displayName": "Puppeteer Snippets",
     "description": "code snippets for puppeteer",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "homepage": "https://github.com/ghoul007/puppeteer-snippets",
     "keywords": [
-      "Puppeteer"
+        "Puppeteer"
     ],
     "repository": {
-      "type": "git",
-      "url": "https://github.com/ghoul007/puppeteer-snippets.git"
+        "type": "git",
+        "url": "https://github.com/ghoul007/puppeteer-snippets.git"
     },
     "bugs": "https://github.com/ghoul007/puppeteer-snippets/issues",
     "engines": {
@@ -25,10 +25,14 @@
             {
                 "language": "javascript",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
             }
         ]
     },
-    "scripts":{
+    "scripts": {
         "publish": "vsce publish"
     }
 }
