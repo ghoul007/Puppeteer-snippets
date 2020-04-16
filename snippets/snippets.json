@@ -211,5 +211,29 @@
         "prefix": "g-event-error",
         "body": "page.on('error', error => console.error(`❌ ${error}`))",
         "description": "Emitted when the page emits an error event"
-    }
+    },
+    "Function-sleep": {
+        "prefix": "g-fonction-sleep",
+        "body": [
+          "const sleep = duration => new Promise(resolve => setTimeout(resolve, duration));",
+          "await sleep($0);"
+        ],
+        "description": "waith with time period (ms)"
+      },
+    "Examples-basic": {
+        "prefix": "g-examples-basic",
+        "body": [
+          "const puppeteer = require('puppeteer');",
+          "",
+          "(async () => {",
+          "\tconst browser = await puppeteer.launch();",
+          "\tconst page = await browser.newPage();",
+          "",
+          "\t$0",
+          "",
+          "\tawait browser.close();",
+          "})();"
+        ],
+        "description": "Creates a basic example"
+      }
 }
