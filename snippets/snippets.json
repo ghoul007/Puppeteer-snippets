@@ -1,30 +1,30 @@
 {
-    "ImportPuppeteer": {
-        "prefix": "g-ip",
+    "Import Puppeteer": {
+        "prefix": "g-import-puppeteer",
         "body": "const ${0:puppeteer} = require('puppeteer');",
         "description": "Imports Puppeteer"
     },
-    "ImportModule": {
-        "prefix": "g-im",
+    "Import Module": {
+        "prefix": "g-import-module",
         "body": "const ${2:moduleName} = require('${1:module}')",
         "description": "Imports Module"
     },
-    "ImportPuppeteerFirefox": {
-        "prefix": "g-ipf",
+    "Import Puppeteer Firefox": {
+        "prefix": "g-import-firefox",
         "body": "const ${0:puppeteer} = require('puppeteer-firefox');",
         "description": "Imports Firefox-Puppeteer "
     },
-    "puppeteerLaunch": {
+    "puppeteer Launch": {
         "prefix": "g-launch",
         "body": "const ${1:browser} = await puppeteer.launch($0);",
         "description": "Creates a Chromium instance"
     },
-    "puppeteerLaunchHeadless": {
+    "puppeteer Launch Headless": {
         "prefix": "g-launch-headless",
         "body": "const ${1:browser} = await puppeteer.launch({headless:false});",
         "description": "Creates a Chromium instance with headless egal false"
     },
-    "browserClose": {
+    "browser Close": {
         "prefix": "g-browser-close",
         "body": "await browser.close();",
         "description": "Closes browser"
@@ -34,17 +34,17 @@
         "body": "(async()=>{\n$0\n})()",
         "description": "IIFE Syntax"
     },
-    "IncognitoBrowser": {
+    "Incognito Browser": {
         "prefix": "g-browser-Incognit",
         "body": "const ${1:context} = await ${2:browser}.createIncognitoBrowserContext();",
         "description": "Creates a incognito browser"
     },
-    "NewPage": {
+    "New Page": {
         "prefix": "g-newPage",
         "body": "const ${1:page} = await ${2:browser}.newPage();",
         "description": "Create a new page"
     },
-    "WaitForTarget": {
+    "Wait For Target": {
         "prefix": "g-waitForTarget",
         "body": "await browser.waitForTarget($0);",
         "description": "Waits until a predicat, this searches for a target in all browser contexts"
@@ -77,92 +77,92 @@
         ],
         "description": "This method runs Array.from(document.querySelectorAll(selector)) within the page and passes it as the first argument"
     },
-    "PageClick": {
+    "Page Click": {
         "prefix": "g-page-click",
         "body": "await page.click('$0');",
         "description": "Clicks in the element"
     },
-    "PageClose": {
+    "Page Close": {
         "prefix": "g-page-close",
         "body": "await page.close();",
         "description": "Closes the page"
     },
-    "PageEmulate": {
+    "Page Emulate": {
         "prefix": "g-page-emulate",
         "body": "await page.emulate($0);",
         "description": "Emulates a given device metrics and user agent"
     },
-    "PageFocus": {
+    "Page Focus": {
         "prefix": "g-page-focus",
         "body": "await page.focus('$0');",
         "description": "Focuses an element within the page"
     },
-    "PageGoBack": {
+    "Page Go Back": {
         "prefix": "g-page-goBack",
         "body": "await page.goBack();",
         "description": "Navigates to the previous page in the history"
     },
-    "PageGoForward": {
+    "Page Go Forward": {
         "prefix": "g-page-goForward",
         "body": "await page.goForward();",
         "description": "Navigates to the next page in the history"
     },
-    "PageGoto": {
+    "Page Goto": {
         "prefix": "g-page-goto",
         "body": "await page.goto('$0');",
         "description": "Navigates the page to a URL"
     },
-    "PageHover": {
+    "Page Hover": {
         "prefix": "g-page-hover",
         "body": "await page.hover('$0');",
         "description": "Hovers over the element"
     },
-    "PageKeyboardDown": {
+    "Page Keyboard Down": {
         "prefix": "g-page-keyboard-down",
         "body": "await page.keyboard.down('$0');",
         "description": "Dispatches a `keydown` event"
     },
-    "PageKeyboardUp": {
+    "Page Keyboard Up": {
         "prefix": "g-page-keyboard-up",
         "body": "await page.keyboard.up('$0');",
         "description": "Dispatches a `keyup` event"
     },
-    "PageKeyboardPress": {
+    "Page Keyboard Press": {
         "prefix": "g-page-keyboard-press",
         "body": "await page.keyboard.press('$0');",
         "description": "Presses on a specific key"
     },
-    "PageKeyboardSendCharacter": {
+    "Page Keyboard Send Character": {
         "prefix": "g-page-keyboard-sendCharacter",
         "body": "await page.keyboard.sendCharacter('$0');",
         "description": "Dispatches a `keypress` and `input` event"
     },
-    "PageKeyboardType": {
+    "Page Keyboard Type": {
         "prefix": "g-page-keyboard-type",
         "body": "await page.keyboard.type('$0');",
         "description": "Types a text into a focused element"
     },
-    "PagePdf": {
+    "Page Pdf": {
         "prefix": "g-pdf",
         "body": "await page.pdf({ path: '${1:test.pdf}', format: '${2|A0,A1,A2,A3,A5,A6|}' });",
         "description": "Generates a PDF from the page"
     },
-    "PageScreenshot": {
+    "Page Screenshot": {
         "prefix": "g-screenshot",
         "body": "await page.screenshot({ path: '${1:test.png}'});",
         "description": "Generates a screenshot of the page"
     },
-    "PageWaitFor": {
+    "Page WaitFor": {
         "prefix": "g-waitFor",
         "body": "await page.waitFor($0);",
         "description": "Waits until an element/predicate/timeout is resolved"
     },
-    "PageWaitForFunction": {
+    "Page Wait For Function": {
         "prefix": "g-waitForFunction",
         "body": "await page.waitForFunction($0);",
         "description": "Waits until a predicate returns a truthy value"
     },
-    "PageWaitForNavigation": {
+    "Page Wait For Navigation": {
         "prefix": "g-waitForNavigation",
         "body": "await page.waitForNavigation();",
         "description": "Waits until the page navigates to a new URL or reloads"
@@ -172,44 +172,137 @@
         "body": "await page.waitForRequest($0);",
         "description": "Waits until a request by URL/predicate is resolved"
     },
-    "Page.waitForResponse": {
+    "Page Wait For Response": {
         "prefix": "g-waitForResponse",
         "body": "await page.waitForResponse($0);",
         "description": "Waits until a response by URL/predicate is resolved"
     },
-    "PageWaitForSelector": {
+    "Page Wait For Selector": {
         "prefix": "g-waitForSelector",
         "body": "await page.waitForSelector('$0');",
         "description": "Waits until an element (by selector) is appeared in the page"
     },
-    "PageWaitForXPath": {
+    "Page Wait For XPath": {
         "prefix": "g-waitForXPath",
         "body": "await page.waitForXPath('$0');",
         "description": "Waits until an element (by XPath) is appeared in the page"
     },
-    "EventDocumentLoaded": {
+    "Event DocumentLoaded": {
         "prefix": "g-event-document-loaded",
         "body": "page.once('domcontentloaded', () => console.info('✅ DOM is ready'));",
         "description": "Emitted when the DOM is parsed and ready (without waiting for resources)"
     },
-    "EventLoad": {
+    "Event Load": {
         "prefix": "g-event-load",
         "body": "page.once('load', () => console.info('✅ Page is loaded'));",
         "description": "Emitted when the page is loaded"
     },
-    "EventConsole": {
+    "Event Console": {
         "prefix": "g-event-console",
         "body": "page.on('console', message => console[message.type()](`👉 ${message.text()}`))",
         "description": "Emitted when a script within the page uses `console`"
     },
-    "EventMetrics": {
+    "Event Metrics": {
         "prefix": "g-event-metrics",
         "body": "page.on('metrics', data => console.info(`👉 Timestamp added at ${data.metrics.Timestamp}`))",
         "description": "EEmitted when a script within the page uses `console.timeStamp`"
     },
-    "EventError": {
+    "Event Error": {
         "prefix": "g-event-error",
         "body": "page.on('error', error => console.error(`❌ ${error}`))",
         "description": "Emitted when the page emits an error event"
+    },
+    "Function Sleep": {
+        "prefix": "g-fonction-sleep",
+        "body": [
+            "const sleep = duration => new Promise(resolve => setTimeout(resolve, duration));",
+            "await sleep($0);"
+        ],
+        "description": "wait with time period (ms)"
+    },
+    "Examples Basic": {
+        "prefix": "g-examples-basic",
+        "body": [
+            "const puppeteer = require('puppeteer');",
+            "",
+            "(async () => {",
+            "\tconst browser = await puppeteer.launch();",
+            "\tconst page = await browser.newPage();",
+            "\tawait page.goto('$0');",
+            "",
+            "\t$1",
+            "",
+            "\tawait browser.close();",
+            "})();"
+        ],
+        "description": "Creates a basic example"
+    },
+    "Examples Pdf Basic": {
+        "prefix": "g-examples-pdf",
+        "body": [
+            "const puppeteer = require('puppeteer');",
+            "",
+            "(async () => {",
+            "\tconst browser = await puppeteer.launch();",
+            "\tconst page = await browser.newPage();",
+            "\tawait page.goto('$1');",
+            "",
+            "\tawait page.pdf({ path: '${2:test.pdf}', format: '${3|A0,A1,A2,A3,A5,A6|}' });",
+            "",
+            "\tawait browser.close();",
+            "})();"
+        ],
+        "description": "Creates a basic example with generate pdf file"
+    },
+    "Examples Screenshot Basic": {
+        "prefix": "g-examples-screenshot",
+        "body": [
+            "const puppeteer = require('puppeteer');",
+            "",
+            "(async () => {",
+            "\tconst browser = await puppeteer.launch();",
+            "\tconst page = await browser.newPage();",
+            "\tawait page.goto('$1');",
+            "",
+            "\tawait page.screenshot({ path: '${2:test.png}'});",
+            "",
+            "\tawait browser.close();",
+            "})();"
+        ],
+        "description": "Creates a basic example with screenshot"
+    },
+    "Example Basic Firefox": {
+        "prefix": "g-examples-basic-firefox",
+        "body": [
+            "const puppeteer = require('puppeteer-firefox');",
+            "",
+            "(async () => {",
+            "\tconst browser = await puppeteer.launch({headless: true});",
+            "\tconst page = await browser.newPage();",
+            "\tawait page.goto($1);",
+            "",
+            "\tconsole.info(browser);",
+            "\tawait browser.close();",
+            "})()"
+        ],
+        "description": "Creates a basic example with firefox"
+    },
+    "Example Device Emulate": {
+        "prefix": "g-examples-mobile-emulate",
+        "body": [
+            "const puppeteer = require('puppeteer');",
+            "const devices = require('puppeteer/DeviceDescriptors');",
+            "",
+            "(async () => {",
+            "\tconst browser = await puppeteer.launch({ headless: false });",
+            "\tconst page = await browser.newPage();",
+            "",
+            "\tawait page.emulate(devices['${2|Blackberry PlayBook,Blackberry PlayBook landscape,BlackBerry Z30,BlackBerry Z30 landscape,Galaxy Note 3,Galaxy Note 3 landscape,Galaxy Note II,Galaxy Note II landscape,Galaxy S III,Galaxy S III landscape,Galaxy S5,Galaxy S5 landscape,iPad,iPad landscape,iPad Mini,iPad Mini landscape,iPad Pro,iPad Pro landscape,iPhone 4,iPhone 4 landscape,iPhone 5,iPhone 5 landscape,iPhone 6,iPhone 6 landscape,iPhone 6 Plus,iPhone 6 Plus landscape,iPhone 7,iPhone 7 landscape,iPhone 7 Plus,iPhone 7 Plus landscape,iPhone 8,iPhone 8 landscape,iPhone 8 Plus,iPhone 8 Plus landscape,iPhone SE,iPhone SE landscape,iPhone X,iPhone X landscape,iPhone XR,iPhone XR landscape,JioPhone 2,JioPhone 2 landscape,Kindle Fire HDX,Kindle Fire HDX landscape,LG Optimus L70,LG Optimus L70 landscape,Microsoft Lumia 550,Microsoft Lumia 950,Microsoft Lumia 950 landscape,Nexus 10,Nexus 10 landscape,Nexus 4,Nexus 4 landscape,Nexus 5,Nexus 5 landscape,Nexus 5X,Nexus 5X landscape,Nexus 6,Nexus 6 landscape,Nexus 6P,Nexus 6P landscape,Nexus 7,Nexus 7 landscape,Nokia Lumia 520,Nokia Lumia 520 landscape,Nokia N9,Nokia N9 landscape,Pixel 2,Pixel 2 landscape,Pixel 2 XL,Pixel 2 XL landscape|}']);",
+            "\tawait page.goto('$1');",
+            "",
+            "\tawait browser.close();",
+            "})();"
+        ],
+        "description": "Creates a basic example with mobile emulate"
     }
 }

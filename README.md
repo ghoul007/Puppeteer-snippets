@@ -8,9 +8,9 @@ ghoul007-puppeteer-snippet provides basic snippet support for Puppeteer for vsco
 
 | Snippet            | Content                                |
 | ------------------ | -------------------------------------- |
-|   `g-ip→`  |    require('puppeteer');
-|  `g-im→`   |    require('...')                   
-|  `g-ipf→`   |   require('puppeteer-firefox');                  
+|  `g-import-puppeteer→`  |    require('puppeteer');
+|  `g-import-module→`   |    require('...')                   
+|  `g-import-firefox→`   |   require('puppeteer-firefox');                  
 |  `g-launch→`   |   await puppeteer.launch();                   
 |  `g-launch-headless→` | await puppeteer.launch({headless:false});                   
 |  `g-browser-close→`   |    await browser.close();                    
@@ -49,3 +49,9 @@ ghoul007-puppeteer-snippet provides basic snippet support for Puppeteer for vsco
 |  `g-event-console→`   |  page.on('console'...);
 |  `g-event-metrics→`   |  page.on('metrics'...);
 |  `g-event-error→`   |  page.on('error'...);
+|  `g-fonction-sleep→`   |  const sleep = duration =>...;
+|  `g-examples-basic→`   |  basic example...
+|  `g-examples-pdf→`   |  example with PDF...
+|  `g-examples-screenshot→`   |  example with screenshot...
+|  `g-examples-basic-firefox→`   | example with firefox...
+|  `g-examples-mobile-emulate→`   | example with mobile emulate...

@@ -33,6 +33,28 @@
         ]
     },
     "scripts": {
-        "publish": "vsce publish"
-    }
+        "publish": "vsce publish",
+        "semantic-release": "semantic-release"
+    },
+    "release": {
+        "verifyConditions": [
+          "semantic-release-vsce",
+          "@semantic-release/github"
+        ],
+        "prepare": {
+          "path": "semantic-release-vsce",
+          "packageVsix": "ghoul007-puppeteer-snippet-1.0.0.vsix"
+        },
+        "publish": [
+          "semantic-release-vsce",
+          {
+            "path": "@semantic-release/github",
+            "assets": "ghoul007-puppeteer-snippet-1.0.0.vsix"
+          }
+        ]
+      },
+      "devDependencies": {
+        "semantic-release": "^17.0.0",
+        "semantic-release-vsce": "^2.1.0"
+      }
 }
